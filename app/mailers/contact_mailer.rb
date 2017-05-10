@@ -1,4 +1,4 @@
-ContactMailer < ActionMailer::Base
+class ContactMailer < ActionMailer::Base
   default to: 'eric_lobatos@yahoo.com'
   
   def contact_email(name, email, body)
@@ -8,4 +8,6 @@ ContactMailer < ActionMailer::Base
     
     mail(from: email, subject: 'Contact Form Message')
   end
-end
+end 
+
+
