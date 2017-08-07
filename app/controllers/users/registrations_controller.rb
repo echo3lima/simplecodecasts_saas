@@ -7,7 +7,7 @@ before_filter :select_plan, only: :new
     super do |resource|
       if params[:plan]
         resource.plan_id = params[:plan]
-        if resource.plan_id == 2
+        if resource.plan_id == 7
           resource.save_with_payment
         else
           resource.save
